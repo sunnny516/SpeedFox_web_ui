@@ -1,0 +1,1516 @@
+body{
+    color: rgb(255 255 255 / 85%);
+    user-select:none;
+    
+}
+
+/* 常用色 */
+:root {
+    --speed-color1: #38cbff;
+}
+img{
+    -webkit-user-drag: none;
+}
+
+.nav{
+    z-index: 500;
+    position: relative;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(78 78 78 / 64%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(118 118 118 / 64%)
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(118 118 118 / 70%)
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+.showScrollBar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+
+.demo_watermark{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 154px;
+    color: rgb(255 255 255 / 10%);
+    pointer-events: none;
+    width: 770px;
+    background: #ff000000;
+    transform: translate(-50%, -50%) rotate(22deg);
+    display: none;
+}
+
+
+/* 主体窗口 和登录窗口*/
+.app_box{
+    position: absolute;
+    background: #181818;
+    
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+/* 窗口圆角 */
+.window_radius,.layui-layer-page .layui-layer-content,.layui-layer-shade,.game_img_bg,.game_bg_video{
+    /* 圆角 */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* 登录窗口，服务器窗口，充值窗口半透明背景*/
+.login_page_body ,.server_list_page_body ,.pay_page_body,.update_box,.net_speed_page_body{
+    background: #181818e6;
+    width: 100%;
+    height: 100%;
+}
+
+#draggable{
+    -webkit-app-region: drag; /* 设置可拖动区域 */
+    width: calc(100% - 96px);
+    height: 32px;
+    /*background: #0070ff59;*/
+    position: absolute;
+    z-index: 100;
+}
+
+
+.Window_button {
+    width: 96px;
+    height: 32px;
+    /*background: red;*/
+    position: absolute;
+    right: 0;
+    z-index: 50000000;
+    
+}
+
+.Window_button * {
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+.Window_button .button{
+    width: 32px;
+    height: 32px;
+    /*background: red;*/
+    float: right;
+}
+
+
+.Window_button .exit:hover{
+    background: #ff0000ad;
+}
+
+.Window_button .hide:hover,.Window_button .set:hover{
+    background: #494949ad;
+}
+
+
+.Window_button .button .layui-icon{
+    margin: 8px;
+    position: absolute;
+}
+
+/* 自定义其他任意主题  */
+.class-layer-style-01 .layui-layer-title{
+    background-color: #181818;
+    color: white;
+    height: 0px;
+    border-bottom: 0px solid #f0f0f0;
+    
+}
+.class-layer-style-01 .layui-layer-btn{
+    padding: 5px 10px 10px;
+    
+}
+.class-layer-style-01 .layui-layer-btn a{
+    background: #fff; border-color: #E9E7E7; color: #333;
+    
+}
+.class-layer-style-01 .layui-layer-btn .layui-layer-btn0{
+    border-color: #FA584D; 
+    
+}
+.home_page_body  .layui-layer-setwin .layui-layer-close {
+    cursor: pointer;
+    color: #fff;
+    
+}
+.home_page_body .layui-layer {
+    background-color: #fff0;
+}
+
+
+.exit_radio{
+    text-align: center;
+    background: #181818e6;
+    height: 76%;
+    padding-top: 48px;
+}
+.layui-form-radio:hover>*, .layui-form-radioed, .layui-form-radioed>i {
+    color: var(--speed-color1);
+}
+.layui-form-checkbox[lay-skin=primary]:hover>i {
+    border-color: var(--brand_blue);
+    color: #fff;
+}
+.layui-form-checked[lay-skin=primary]>i {
+    border-color: var(--brand_blue);
+    background-color: var(--brand_blue);
+}
+.layui-form-checkbox[lay-skin=primary]>div {
+    color: rgb(255 255 255 / 85%);
+}
+
+/* 顶栏 */
+.navbar{
+    background-color: #ff676775;
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+/* 主页顶部logo */
+.nav .logo{
+    width: 256px;
+    margin: 22px 0px 0px 64px;
+}
+
+/* 登录区域的logo */
+.login-container .logo{
+    /*width: 64px;*/
+    height: 55px;
+    margin: 0px 0px 24px 0px;
+    /*filter: invert(100%);*/
+}
+
+/*登录区域的输入框*/
+.login-container .layui-input, .layui-select, .layui-textarea {
+    height: 38px;
+    line-height: 1.3;
+    line-height: 38px \9;
+    border-width: 0px;
+    border-style: solid;
+    background-color: #4343436b;
+    color: rgba(0, 0, 0, .85);
+    border-radius: 2px;
+}
+
+.login-container .layui-form-item .layui-btn{
+    margin-top: 32px;
+}
+
+.login-container  a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-container h2 {
+    position: relative;
+    top: -72px;
+    left: 67px;
+    font-size: 26px;
+    font-weight: 100;
+    margin-bottom: -32px;
+    width: 100px;
+    display: none;
+}
+
+
+
+
+/* 顶部菜单栏 */
+.top-tab{
+    position: absolute;
+    top: 22px;
+    left: 338px;
+}
+
+/* 顶部栏文字大小 */
+.top-tab .layui-tab-title li {
+    font-size: 18px;
+    padding: 0 8px;
+    opacity: .7 !important;
+}
+/* 顶部选中样式 */
+.layui-tab-brief>.layui-tab-title .layui-this {
+    opacity: 1 !important;
+    font-size: 20px;
+    font-weight:600;
+    color: var(--graph_white);
+    
+}
+/* 去除底部下划线 */
+.layui-tab .layui-tab-title {
+    border-bottom-width: 0px;
+}
+/* 底部下划线 */
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+    border-bottom: 0px solid var(--brand_blue);
+    width: 10px;
+    height: 10px;
+    background: var(--brand_blue);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 26px;
+    height: 3px;
+    top: 38px;
+    border-radius: 5px;
+}
+
+/* 服务器列表 */
+/* 顶部菜单栏 */
+.server-list-tab{
+    position: absolute;
+    top: 4px;
+    /*left: 157px;*/
+    width: 100%;
+}
+
+/* 顶部栏文字大小 */
+.server-list-tab .layui-tab-title li {
+    font-size: 18px;
+    padding: 0 32px;
+    opacity: .7 !important;
+}
+
+.server-list-tab .layui-unselect {
+    display: none;
+}
+.server-list-tab .layui-this:after{
+    top: 36px!important;
+}
+
+
+.home_game_list {
+    /*width: 100%;*/
+    height: 380px;
+    display: flex;
+    padding: 0px 18px;
+    overflow: hidden;
+    position: absolute;
+    top: -420px;
+    top: 100px;
+    /*background: #ff000073;*/
+    transition: all .12s;
+}
+
+.home_game_list_transition {
+    top: -420px;
+}
+
+.home_game_list_all{
+    height: 600px;
+    display: flex;
+    padding: 0px 6px 0px 24px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 800px;
+    flex-wrap: wrap;
+    /*background: #ff000069;*/
+    width: 100%;
+    transition: all .2s;
+    padding-top: 28px;
+}
+
+.home_game_list_all_transition{
+    top: 75px;
+}
+
+.home_game_list_all .home_game_box_all{
+    width: 178px;
+    margin: 8px 6px;
+}
+
+.home_game_list_all .home_game_box .box_a {
+    height: 267px;
+}
+
+.home_game_list_all .home_game_box .box_a .Game_start_ok .button_box {
+    padding-top: 47px;
+}
+
+.home_game_list_all .home_game_box .box_a .Game_start_ok .button_box button {
+    margin-bottom: 50px;
+}
+
+
+.home_game_list_all .home_game_box .box_a .Game_start_ok p {
+    margin: 8px 50px;
+}
+
+.home_game_box{
+    margin: 0px 6px;
+    width: 229px;
+}
+
+.home_game_box .box_a{
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 340px;
+}
+.home_game_box *{
+    transition: top 0.2s;
+    will-change: transform;
+}
+
+.home_game_box .box_a img{
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.home_game_box .box_b p {
+    font-size: 18px;
+    padding-top: 10px;
+    text-align:center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+
+.home_game_box .box_a .top{
+    width: 100%;
+    height: 50px;
+    /*background: #000000;*/
+    background: linear-gradient(0deg, #ffffff00 0%, #000000 100%);
+    position: relative;
+    top: -348px;
+    top: -420px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.home_game_box:hover .box_a .top{
+    top: -348px;
+}
+
+
+.home_game_list_all .home_game_box:hover .box_a .top{
+    top: -270px;
+}
+
+.home_game_box .box_a .top .icon{
+    float: right;
+    margin: 16px 10px;
+}
+
+.home_game_box .box_a .top .icon i{
+    cursor: pointer;
+}
+
+.home_game_box .box_a .top .icon .layui-icon{
+    font-size: 22px;
+    margin: 0px 4px;
+}
+
+
+
+
+.home_game_box .box_a .bottom{
+    width: 100%;
+    height: 128px;
+    /*background: #000000;*/
+    background: linear-gradient(180deg, #ffffff00 0%, #000000d1 90%);
+    position: relative;
+    top: -180px;
+    top: -0px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.home_game_box:hover .box_a .bottom{
+    top: -170px;
+}
+
+.home_game_box .box_a .bottom p{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    /*color: var(--brand_blue);*/
+    color :var(--speed-color1);
+    margin-top: 68px;
+}
+
+
+.home_game_box .box_a .start_ing{
+    position: absolute;
+    top: 0;
+    width: 105%;
+    height: 105%;
+    background: #000000c9;
+     pointer-events: none;
+}
+
+
+.home_game_box .box_a .Game_start_ok{
+    position: absolute;
+    top: 0;
+    background: #000000b5;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 62px;
+    display: none;
+}
+
+
+.home_game_box .box_a .Game_start_ok p{
+    background: #0000008f;
+    margin: 8px 80px;
+    padding: 2px 0px;
+    border-radius: 8px;
+    font-size: 12px;
+
+}
+
+.home_game_box .box_a .Game_start_ok h2{
+    font-size: 44px;
+}
+.home_game_box .box_a .Game_start_ok h2 ms{
+    font-size: 16px;
+    padding-left: 4px;
+}
+
+.home_game_box .box_a .Game_start_ok .button_box{
+        padding-top: 64px;
+}
+
+.home_carousel{
+    width: 100%;
+    height: 200px;
+    background: #3333;
+    position: absolute;
+    bottom: -220px;
+    bottom: 0px;
+    transition: all .3s;
+    /*left: 24px;*/
+    /*border-radius: 8px;*/
+}
+
+.home_carousel_transition{
+    bottom: -220px;
+
+}
+
+.home_menu{
+    width: 470px;
+    height: 160px;
+    background: #3333;
+    position: absolute;
+    bottom: 32px;
+    right: 24px;
+    border-radius: 8px;
+}
+
+/* 二级菜单样式 */
+.all-game-tab{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 18px 0 0;
+}
+
+
+/* 顶部栏文字大小 */
+.all-game-tab .layui-tab-title li {
+    font-size: 18px;
+    padding: 0 16px;
+    opacity: .7 !important;
+}
+
+
+.game_list_all {
+    /*width: 100%;*/
+    height: 600px;
+    display: flex;
+    padding: 0px 6px 0px 24px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100px;
+    flex-wrap: wrap;
+    
+    
+    /*background: #ff000073;*/
+    
+}
+
+.game_list_all .home_game_box {
+    width: 147px;
+    margin-top: 12px;
+}
+
+.game_list_all .home_game_box .box_a {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 220px;
+}
+
+
+.game_list_all .home_game_box .box_b p {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 24px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+
+.game_list_all .home_game_box .box_a .bottom{
+    width: 100%;
+    height: 128px;
+    /*background: #000000;*/
+    background: linear-gradient(180deg, #ffffff00 0%, #000000 90%);
+    position: relative;
+    top: -0px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.game_list_all .home_game_box:hover .box_a .bottom{
+    top: -120px;
+    
+}
+
+
+.game_list_all .home_game_box .box_a .top{
+    width: 100%;
+    height: 128px;
+    /*background: #000000;*/
+    background: linear-gradient(0deg, #ffffff00 50%, #00000096 75%, #000000 100%);
+    position: relative;
+    top: -225px;
+    top: -290px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.game_list_all .home_game_box:hover .box_a .top{
+    top: -225px;
+}
+
+
+.home_game_box .box_a .bottom .button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 32px;
+    width: 85%;
+}
+
+.nav .layui-input, .layui-select, .layui-textarea {
+    height: 38px;
+    line-height: 1.0;
+    line-height: 38px \9;
+    border-width: 0px;
+    border-style: solid;
+    background-color: #3333;
+    font-size: 16px;
+    color: rgb(255 255 255 / 85%);
+    border-radius: 99px;
+}
+
+.game_search{
+    width: 150px;
+    position: absolute;
+    right: 192px;
+    top: 38px;
+    opacity: 0.8;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+.game_search-this{
+    width: 256px;
+    right: 30px;
+    top: 90px;
+}
+
+.nav .back_bottom{
+    width: 12px;
+    height: 12px;
+    padding: 8px;
+    background-color: #5f5f5f;
+    padding-left: 4px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    
+    /* background: red; */
+    border-radius: 4px;
+    position: absolute;
+    top: 40px;
+    left: 28px;
+}
+
+.game_search_text {
+    position: absolute;
+    top: 110px;
+    left: 40px;
+}
+
+.game_search_text p {
+    font-size: 16px;
+    float: left;
+}
+
+
+/* 使用更高优先级的选择器  去除搜索框的光效*/
+.layui-form-item .layui-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+    color: white;
+}
+
+
+
+/* 无游戏 */
+
+.nogame img {
+    opacity: 0;
+}
+
+.nogame .box_a .top_nogame {
+    width: 100%;
+    height: 110%;
+    background-color: #333;
+    position: relative;
+    top: -0px;
+    /* hover 高度 */
+    /*top: -355px;*/
+    border-radius: 0px;
+    overflow: hidden;
+    transition: top 0.0s;
+    will-change: transform;
+    z-index: 9;
+    text-align: center;
+}
+.nogame:hover .box_a .top_nogame{
+    top: -355px;
+}
+
+
+
+.nogame .box_a .bottom_nogame {
+    width: 100%;
+    
+    width: 227px; /*修复删除添加游戏尺寸抽风*/
+    height: 110%;
+    background: #000000;
+    position: relative;
+    top: -725px;
+    border-radius: 0px;
+    overflow: hidden;
+    transition: top 0.0s;
+    will-change: transform;
+    text-align: center;
+    padding-top: 100px;
+    opacity: .25;
+}
+
+.nogame .box_a .bottom_nogame .layui-icon {
+    font-size: 64px;
+}
+.nogame .box_a .bottom_nogame h2 {
+    padding-top: 38px;
+}
+
+
+
+.nogame .box_a .top_nogame .top_nogame_img {
+    position: absolute;
+    bottom: 23px;
+    z-index: 10;
+    opacity: 1;
+    width: 256px;
+    left: -8px;
+    cursor: auto;
+}
+
+.nogame .box_a .top_nogame p {
+    padding-top: 50px;
+}
+
+.server_list_page_body .list_box {
+    padding: 0px 32px;
+    position: absolute;
+    top: 86px;
+}
+
+.server_list_page_body .list_box .all_server button {
+    margin: 0px 5px 16px;
+    width: 144px;
+}
+.server_list_page_body .list_box .all_server button p{
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 1;   
+    overflow: hidden;   
+    text-overflow:ellipsis;
+    position: relative;
+    left: 22px;
+    top: -38px;
+    width: 90px;
+}
+
+.server_list_page_body .list_box .go_start {
+    width: 128px;
+    margin: 0px 332px;
+    position: fixed;
+    bottom: 96px;
+}
+
+.server_list_page_body .list_box .title{
+    margin: 0px 0px 18px;
+    font-size: 14px;
+    color: white;
+}
+
+.server_list_page_body .list_box .all_server button .Flag{
+    width: 24px;
+    position: relative;
+    left: 0px;
+    left: -50px;
+    top: -2px;
+}
+
+.server_list_page_body .list_box .serverload{
+    font-size: 48px;
+    position: absolute;
+    left: 405px;
+    top: 128px;
+}
+
+.server_list_page_body .list_box .server_list{
+    width: 635px;
+}
+
+
+
+/* 将表格背景色改为透明 */
+.server_list_page_body .layui-table {
+    background-color: transparent;
+}
+
+/* 将表格中文字颜色改为白色 */
+.server_list_page_body .layui-table th, .layui-table td {
+    color: white;
+}
+
+/* 悬停时背景色，文字颜色不变 */
+.server_list_page_body .layui-table-hover .layui-table-cell {
+    background-color: #252525b5;
+}
+/* 禁用悬停状态下的过渡效果 */
+.server_list_page_body .layui-table-hover .layui-table-cell:hover {
+    transition: none !important;
+    -webkit-transition: none !important;
+}
+.server_list_page_body .layui-table tr {
+    transition: none !important;
+    -webkit-transition: none !important;
+}
+/* 移除表格的边框线框 */
+.server_list_page_body .layui-table td, .server_list_page_body  .layui-table th {
+    border: none !important;
+}
+
+/* 移除表格的内外边框线框 */
+.server_list_page_body  .layui-table, .server_list_page_body .layui-table td, .server_list_page_body  .layui-table th , .server_list_page_body  .layui-table-header{
+    border: none !important;
+    border-collapse: collapse !important;
+    border-width: 0px;
+    border-style: solid;
+}
+
+.server_list_page_body  .layui-table td, .server_list_page_body  .layui-table th, .layui-table-col-set, .layui-table-fixed-r, .layui-table-grid-down, .layui-table-header, .layui-table-mend, .layui-table-page, .layui-table-tips-main, .layui-table-tool, .layui-table-total, .layui-table-view, .layui-table[lay-skin=line], .layui-table[lay-skin=row] {
+    border-width: 0px;
+    border-style: solid;
+    border-color: #eee;
+}
+
+.server_list_page_body netok {
+    width: 90%;
+    height: 100%;
+    /*background: #16baaa33;*/
+    position: absolute;
+}
+
+.server_list_page_body netok canvas {
+    width: 160px;
+    height: 24px;
+}
+
+.server_list_page_body .layui-table-body {
+    position: relative;
+    overflow: auto;
+    margin-right: 2px;
+    margin-bottom: 0px;
+}
+
+/* 选中颜色 */
+.server_list_page_body .layui-table-checked {
+    background-color: #1e9fff9c;
+}
+
+.start_game .box{
+    margin: 32px 100px 0px;
+    z-index: 15;
+    position: absolute;
+}
+
+.start_game .game_img_bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+.start_game .game_img_bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.start_game .game_img_bg .MASK{
+    width: 100%;
+    height: 100%;
+    background: #000000c9;
+    position: absolute;
+    -webkit-mask-image: -webkit-linear-gradient(left, #000000 30%, #000000c7 100%);
+    z-index: 1;
+}
+
+
+.start_game .box  p {
+    font-size: 46px;
+    padding-top: 0px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    /*background: red;*/
+    width: 480px;
+    position: absolute;
+    top: 100px;
+}
+
+.start_game .box .pt_title{
+    font-size: 18px;
+    TOP: 170px;
+    /*display: none;*/
+}
+.start_game .box .pt_list{
+    position: absolute;
+    top: 167px;
+    left: 84px;
+    width: 300px;
+    height: 33px;
+    overflow-y: auto;
+}
+
+.start_game .box .pt_list .pt_box{
+    margin: 0px 4px;
+    float: left;
+}
+.start_game .box .pt_list .pt_box img{
+    width: 32px;
+    height: 32px;
+    /*background: white;*/
+    border-radius: 999px;
+}
+
+.start_game .box .pt_list .pt_box .layui-icon{
+    position: relative;
+    top: 3px;
+    left: -3px;
+    font-size: 18px;
+    margin-left: -22px;
+}
+
+.start_game .box .info{
+    background-color: #8b8b8b33;
+    border-color: #898989e8;
+    position: fixed;
+    top: 320px;
+}
+
+.start_game .box .info .server_info{
+    width: 400px;
+    height: 48px;
+}
+
+.start_game .box .ping{
+    background-color: #8b8b8b33;
+    border-color: #898989e8;
+    position: fixed;
+    top: 380px;
+}
+
+.start_game .box .ping .server_ping{
+    width: 400px;
+    height: 74px;
+}
+
+.start_game .box .MASK{
+    background: #4f4f4f7a;
+}
+
+.start_game .box .server_info p{
+    font-size: 20px;
+    position: absolute;
+    TOP: 0;
+    color: #ffffffcf;
+    margin: 11px 16px;
+}
+
+.start_game .box .server_info .udp_ico {
+     width: 18px;
+    position: absolute;
+    right: 0;
+    margin: 8px 7px;
+    opacity: 0.6;
+}
+
+.start_game .box .stop_speed{
+    width: 186px;
+}
+
+
+.start_game .box .server_button{
+    position: fixed;
+    width: 400px;
+    /*background: #ff6e6e6b;*/
+    top: 500px;
+}
+
+#Start_speed_pingCanvas{
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    -webkit-mask-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 1) 100%);
+}
+
+.start_game .box .ping .pingh2{
+    top: 12px;
+    margin: 0px 24px;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+}
+
+.start_game .box .ping .diubao{
+    top: 12px;
+    left: 88px;
+    margin: 0px 24px;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+}
+
+/*当前速度*/
+.start_game .box .ping .Bytes_speed{
+    top: 12px;
+    left: 176px;
+    margin: 0px 24px;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+}
+/*加速流量*/
+.start_game .box .ping .outputBytes{
+    top: 12px;
+    left: 264px;
+    margin: 0px 24px;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+}
+
+
+.start_game .box .ping mini{
+    color: white;
+    font-size: 12px;
+}
+
+
+
+
+
+.start_game .box .ping .diubao p ,.start_game .box .ping .pingh2 p,.start_game .box .ping .outputBytes p,.start_game .box .ping .Bytes_speed p{
+    font-size: 12px;
+    top: 32px;
+    color: #ffffffa8;
+    font-weight: 100;
+}
+
+.home_page_body .layui-layer-tips .layui-layer-content{
+    opacity: 0.6;
+}
+
+.home_page_body .layui-layer-title {
+    padding: 0 81px 0 16px;
+    height: 0px;
+    border-bottom: 0px solid #f0f0f000;
+}
+
+.game_bg_video{
+    POSITION: ABSOLUTE;
+    TOP: 0;
+    LEFT: 0;
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Framework{
+    margin: 8px 12px;
+    color: #ffffff61;
+    z-index: 9999;
+    position: absolute;
+    bottom: 0;
+}
+
+.home_page_body .net_speed_list{
+    padding: 24px 32px 0px;
+}
+
+.home_page_body .net_speed_list .net_speed_list_box{
+    padding: 24px 32px;
+}
+
+.nav .time_clock{
+    position: absolute;
+    right: 266px;
+    top: 42px;
+    opacity: 0.8;
+}
+
+.nav .time_clock p{
+    font-size: 26px;
+    font-family: Regular1971;
+    letter-spacing: 3px;
+}
+
+@font-face {
+  font-family: Regular1971;
+  src: url(../../static/18Franklin-Black2.ttf);
+}
+
+
+.home_page_body .user_top_info{
+    position: absolute;
+    background: #3333;
+    width: 150px;
+    height: 38px;
+    right: 26px;
+    top: 38px;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.home_page_body .user_top_info .avater{
+    background: #fff;
+    width: 38px;
+    height: 38px;
+    /*background: blue;*/
+    border-radius: 999px;
+    /*border-radius: 8px;*/
+}
+
+.home_page_body .user_top_info .cards{
+    /*width: 38px;*/
+    height: 38px;
+    height: 38px;
+    position: absolute;
+    right: -3px;
+    z-index: -1;
+    opacity: 0.45;
+    width: 138px;
+}
+
+.home_page_body .user_top_info p {
+    position: absolute;
+    top: 7px;
+    LEFT: 44px;
+    /*BACKGROUND: RED;*/
+    width: 110px;
+    font-size: 18px;
+    opacity: 0.8;
+
+}
+.error_log{
+    border-radius: 0; 
+    height: 500px;
+    margin: 0px 100px;
+    width: 800px;
+    resize:none;
+}
+.error_title{
+    margin: 18px 100px 12px;
+    font-size: 24px;
+}
+
+.user_top_info:hover+.user_info_box , .user_info_box:hover ,.user_info_box .info_box:hover{
+    display: block;
+}
+
+.user_info_box{
+    /*BACKGROUND: #ff00009e;*/
+    width: 154px;
+    height: 154px;
+    right: 24px;
+    position: absolute;
+    top: 38px;
+    display:none;
+}
+
+.user_info_box .info_box{
+    float: right;
+    /*BACKGROUND: #00ff089e;*/
+    background: #181818e6;
+    width: 288px;
+    height: 180px;
+    margin-top: 50px;
+    border-radius: 6px;
+}
+
+.user_info_box .info_box .title{
+    margin: 8px 0px 0px 12px;
+}
+
+.server_list_page_body .layui-tab .layui-tab-title{
+    text-align: center; /*给父元素设置text-align*/
+}
+
+.server_list_page_body load {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /*background: red;*/
+    top: 160px;
+    left: 380px;
+    display: none;
+}
+
+
+.server_list_page_body load .layui-icon{
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+}
+
+
+
+
+.home_carousel img{
+    width: 100%;
+    height: 100%;
+}
+
+.user_info_box .info_box .time1{
+    margin: 8px 0px 0px 12px;
+    font-size: 18px;
+}
+
+.user_info_box .info_box .time2{
+    margin: 16px 0px 0px 12px;
+    font-size: 18px;
+}
+
+.user_info_box .info_box .time_title1{
+    margin: 8px 0px 0px 12px;
+    background: #3333;
+    width: 100px;
+    padding: 3px 8px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 99px;
+}
+
+.user_info_box .info_box .time_title2{
+    margin: 8px 0px 0px 12px;
+    background: #3333;
+    width: 100px;
+    padding: 3px 8px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 99px;
+}
+
+.user_info_box .info_box .time1_bottom{
+    position: absolute;
+    right: 18px;
+    top: 96px;
+}
+.user_info_box .info_box .time2_bottom{
+    position: absolute;
+    right: 18px;
+    top: 162px;
+    opacity: 0.6;
+}
+
+.update_box h2{
+    padding: 16px 18px 0px;
+    font-size: 24px;
+}
+.update_box .layui-progress{
+        position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.update_box .dl1 {
+    position: absolute;
+    bottom: 10px;
+    left: 12px;
+    width: 233px;
+}
+.update_box .dl2 {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    width: 100px;
+    text-align: right;
+}
+
+.server_list_page_body .provider_switch .layui-form-onswitch{
+    border-color: var(--speed-color1);;
+    background-color: var(--speed-color1);;
+    
+    
+}
+
+
+.server_list_page_body .mode_set{
+    /*background: red;*/
+    width: 250px;
+    position: fixed;
+    left: 98px;
+    bottom: 98px;
+}
+
+
+.server_list_page_body .Ticket_MSG{
+    /*background: red;*/
+    width: 60px;
+    position: fixed;
+    RIGHT: 98px;
+    bottom: 98px;
+}
+
+.my_set .layui-nav{
+    position: ABSOLUTE;
+    top: 140px;
+    left: 64px;
+    background-color: #ff000000;
+    width: 180px;
+}
+
+.my_set .layui-nav .layui-this {
+    background-color: #ff000000;
+    
+}
+
+.my_set .layui-nav .layui-this a {
+    background-color: #5f5f5f;
+    opacity: 0.8;
+    border-radius: 12px;
+}
+
+.my_set .set_title{
+    position: absolute;
+    left: 64px;
+    top: 100px;
+}
+
+.my_set .my_set_page{
+    /*background: #ff00004d;*/
+    width: 700px;
+    height: 560px;
+    position: absolute;
+    left: 260px;
+    top: 100px;
+}
+
+.my_set_page .title{
+    margin: 16px 0px 8px 16px;
+}
+
+.my_user .avater{
+    background: #fff;
+    width: 64px;
+    height: 64px;
+    border-radius: 999px;
+    position: absolute;
+    top: 64px;
+    left: 64px;
+    z-index: 5;
+}
+.my_user .cards{
+    position: absolute;
+    top: 64px;
+    left: 100px;
+    height: 64px;
+    width: 256px;
+    background: #5f5f5f;
+    border-radius: 0px 999px 999px 0px;
+    -webkit-mask-image: -webkit-linear-gradient(left, #000000c7 30%, #00000047 100%);
+}
+
+.my_user .username{
+    position: absolute;
+    top: 70px;
+    left: 140px;
+    font-size: 24px;
+}
+
+.my_user .UID{
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    font-size: 18px;
+}
+.buy_time .buybgiframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.my_set_page .layui-form-label{
+        padding-right: 48px;
+}
+
+.my_set_page .layui-form-checked:hover>i, .my_set_page .layui-form-checked>i {
+    color: #ffffff;
+}
+
+.my_set_page hr{
+    opacity: 0.2;
+    margin: 0px 12px;
+}
+
+.my_set_page .title2{
+    margin: 16px 0px 8px 32px;
+}
+
+.my_set_page .reset_lsp{
+    position: absolute;
+    right: 64px;
+    top: 42px;
+    width: 80px;
+}
+
+.my_set_page .reset_nf2{
+    position: absolute;
+    right: 64px;
+    top: 119px;
+    width: 80px;
+}
+
+.my_set_page .reset_tun{
+        position: absolute;
+    right: 64px;
+    top: 205px;
+    width: 80px;
+}
+
+.my_set_page .net_test{
+        position: absolute;
+    right: 64px;
+    top: 280px;
+    width: 80px;
+}
+
+
+.my_set .iframe iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.my_user .Logout {
+    position: absolute;
+    right: 64px;
+    top: 72px;
+}
+
+
+.net_speed_page_body .net_speed_list{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 470px;
+    width: 794px;
+}
+
+.net_speed_page_body .title{
+    padding: 12px 16px 0px;
+}
+
+
+.net_speed_page_body .net_speed_list_data{
+    background: #33333333;
+    width: 47.9%;
+    height: 100px;
+    float: left;
+    margin: 8px 8px;
+}
+.net_speed_page_body .net_speed_list_data .ico{
+
+    margin: 18px 18px 18px 32px;
+    width: 64px;
+    height: 64px;
+}
+
+.net_speed_page_body .net_speed_list_data .title1{
+    position: relative;
+    top: -88PX;
+    left: 128px;
+    font-size: 24px;
+}
+
+.net_speed_page_body .net_speed_list_data .net_speed_list_button{
+    top: -76px;
+    left: 128px;
+    POSITION: relative;
+}
+
+.net_speed_page_body .net_speed_list_data .layui-progress{
+    top: -70px;
+    left: 128px;
+    POSITION: relative;
+    width: 210px;
+    display: none;
+}
+
+.net_speed_page_body .net_speed_list_data .layui-progress .layui-progress-bar{
+        -webkit-transition: all 10s;
+}

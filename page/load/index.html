@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<load>
+    <div class="logo">
+      <div class="line left top"></div>
+      <div class="line left"></div>
+      <div class="line middle top"></div>
+      <div class="line middle"></div>
+      <div class="line right top"></div>
+      <div class="line right"></div>
+    </div>
+    <svg>
+      <filter id="noiseFilter">
+        <feTurbulence type="turbulence" baseFrequency=".995" numOctaves="6" stitchTiles="stitch" result="noise"></feTurbulence>
+        <feComposite in="noise" in2="SourceAlpha" operator="in" result="flood_alpha"></feComposite>
+        <feDisplacementMap id="disp" in2="noise" in="SourceGraphic" scale="50" xChannelSelector="B" yChannelSelector="B" result="displace"></feDisplacementMap>
+        <feBlend mode="exclusion" in="flood_alpha" in2="SourceGraphic" result="blend"></feBlend>
+        <feBlend mode="saturation" in="blend" in2="displace"></feBlend>
+      </filter>
+    </svg>
+</load>
+<!-- partial -->
+  
+</body>
+</html>

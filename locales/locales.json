@@ -1,0 +1,17 @@
+{
+    "Home": "首页",
+    "Game": "游戏",
+    "Node": "节点",
+    "Region": "区服",
+    "SpeedNow": "立即加速",
+    "StopSpeed": "停止加速",
+    "login_button": "登录",
+    "signup_button": "注册",
+    "error_message": "发生错误",
+  
+    "Speed_code_nf2": "进程模式",
+    "Speed_code_tun": "网卡模式",
+    "Speed_code_tunf2": "混合模式",
+    
+    "welcome_message": "欢迎使用我们的应用"
+}
